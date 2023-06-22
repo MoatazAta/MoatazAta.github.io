@@ -22,9 +22,6 @@ window.onload = function () {
     btn[2].onclick = function () {
         modal[2].style.display = "block";
     }
-    // btn[3].onclick = function () {
-    //     modal[3].style.display = "block";
-    // }
 
     // When the user clicks on <span> (x), close the modal
     span[0].onclick = function () {
@@ -36,9 +33,6 @@ window.onload = function () {
     span[2].onclick = function () {
         modal[2].style.display = "none";
     }
-    // span[3].onclick = function () {
-    //     modal[3].style.display = "none";
-    // }
 
 
     // When the user clicks anywhere outside of the modal, close it
@@ -52,9 +46,6 @@ window.onload = function () {
         if (event.target == modal[2]) {
             modal[2].style.display = "none";
         }
-        // if (event.target == modal[3]) {
-        //     modal[3].style.display = "none";
-        // }
     }
 
     // modal button (source code) --> navigate to his repository
@@ -69,6 +60,15 @@ window.onload = function () {
     document.getElementById("btn-modal3").onclick = function () {
         window.open("https://github.com/MoatazAta/microdroplets-identification-and-segmentation");
     };
+
+    document.getElementById("btn-code1").onclick = function () {
+        window.open("https://github.com/MoatazAta/My-Task-Board");
+    };
+
+    document.getElementById("btn-code2").onclick = function () {
+        window.open("https://github.com/MoatazAta/Cryptonite");
+    };
+
 
 
 

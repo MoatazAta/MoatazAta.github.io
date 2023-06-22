@@ -1,13 +1,13 @@
-
 html {
     font-size: 70%;
 }
 
 body {
     height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
-
-
 
 .top-bg {
     width: 100%;
@@ -20,6 +20,7 @@ body {
 .top-bg:hover {
     opacity: 1.0;
 }
+
 .m-logo {
     position: absolute;
     left : 0;
@@ -35,11 +36,11 @@ body {
     position: relative;
     background-color: whitesmoke;
 }
+
 .top:hover .top-bg {
     opacity: 1.0;
 
 }
-
 
 .top h1 {
     color: white;
@@ -108,22 +109,22 @@ body {
     display: inline-block;
     position: relative;
     font-family: 'Dosis', sans-serif;
-  }
+}
 a.effect-shine:hover {
     -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
     -webkit-mask-size: 200%;
     animation: shine 1s infinite;
-  }
-  
-  @-webkit-keyframes shine {
+}
+
+@-webkit-keyframes shine {
     from {
-      -webkit-mask-position: 150%;
+        -webkit-mask-position: 150%;
     }
-    
+
     to {
-      -webkit-mask-position: -50%;
+        -webkit-mask-position: -50%;
     }
-  }
+}
 
 @media(max-width:1400px){
     .top {
@@ -167,7 +168,6 @@ a.effect-shine:hover {
     text-align: center;
     margin: 0 30px 0 30px;
     padding: 4em;
-    height: 400px;
 }
 
 .about-header {
@@ -210,7 +210,6 @@ a.effect-shine:hover {
 }
 
 .info p {
-
     display: block;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -220,11 +219,9 @@ a.effect-shine:hover {
     text-align: justify;
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.8;
-
 }
 
 @media(max-width:1200px){
-   
     .about {
         background-color: whitesmoke;
         display:flex;
@@ -362,11 +359,9 @@ a.effect-shine:hover {
         width: 95%;
         left:0;
     }
-
 }
+
 /* ------------------------------------------------------------------- */
-
-
 
 .artboard { 
     display: flex;
@@ -379,8 +374,6 @@ a.effect-shine:hover {
     background-color: whitesmoke;
     margin: 0 30px 0 30px;
 }
-
-
 
 .card {
     flex: initial;
@@ -406,10 +399,6 @@ a.effect-shine:hover {
     /* The image is overflowing the parent. */
     box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
 }
-
-/* .card__side--front {
-    background-image: linear-gradient(to right bottom, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.7)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
-} */
 
 .card:nth-child(odd) .card__side--back {
     background-image: linear-gradient(to right bottom, rgba(30, 11, 54, 0.7), rgba(202, 55, 130, 0.7));
@@ -489,7 +478,6 @@ a.effect-shine:hover {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     background-image: linear-gradient(to top right, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.65)), url();
-
 }
 
 .card:nth-child(even) .card__cover {
@@ -560,7 +548,7 @@ a.effect-shine:hover {
         width: 50%;
     }
 }
-@media only screen and (max-width: 600px),
+/* @media only screen and (max-width: 600px),
 only screen and (hover: none) {
     .card {
         height: auto;
@@ -600,7 +588,7 @@ only screen and (hover: none) {
     .card__title {
         font-size: 4rem;
     }
-}
+} */
 
 
 /* ---------------------------------------MODAL-----------------------------------------  */
@@ -728,46 +716,273 @@ only screen and (hover: none) {
     position: fixed;
     right: 0;
     bottom: 50%;
-  }
-  
-  .socicon {
+}
+
+.socicon {
     width: 30px;
     height: 33px;
-  }
+}
 
   /* ------------------------------------------------------------------- */
-  .scroll-up {
-    position: fixed;
-    right: 0;
-    bottom: 3%;
-    cursor: pointer;
-  }
-  
-  .up-arrow {
-    width: 3rem;
-    height: 3rem;
-  }
+.scroll-up {
+position: fixed;
+right: 0;
+bottom: 3%;
+cursor: pointer;
+}
+
+.up-arrow {
+width: 3rem;
+height: 3rem;
+}
 
   /* ------------------------------------------------------------------- */
-  footer {
-    background-color: var(--bg-color);
-    padding: 1.25rem;
-    text-align: center;
-    margin: 0 30px 30px 30px;
-    background-color:rgb(90, 0, 175);;
-    color:white;
-  }
+footer {
+background-color: var(--bg-color);
+padding: 1.25rem;
+text-align: center;
+margin: 0 30px 30px 30px;
+background-color:rgb(90, 0, 175);;
+color:white;
+}
 
-  footer img {
-      width: 15rem;
-      height: 12rem;
-  }
+footer img {
+    width: 15rem;
+    height: 12rem;
+}
 
-  footer p {
-      font-size: 1.5rem;
-  }
+footer p {
+    font-size: 1.5rem;
+}
 
-  /* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        height: 100vh;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .m-logo {
+        position: absolute;
+        left : 40%;
+        top: 0;
+        height: 12rem;
+        width: 16rem;
+        margin: 0 auto;
+    }
+
+    .top {
+        height: 750px;
+        margin: 0;
+        
+    }
+
+    .top-bg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .top button {
+        margin-left: 12em;
+    }
+
+    .about {
+        background-color: whitesmoke;
+        display: flex;
+        grid-template-columns: 50% 50%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .top>h3>a {
+        color: rgb(90, 0, 175);
+        font-size: 20px;
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+        font-family: 'Dosis', sans-serif;
+    }
+
+    .icons {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills h1 {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        font-size: 35px;
+        font-family: "Trebuchet MS", sans-serif;
+        letter-spacing: 1px;
+        color: rgb(90, 0, 175);
+        background-color: cadetblue;
+    }
+
+    .skills {
+        position: relative;
+        background-color: whitesmoke;
+        margin: 0;
+        height: 1200px;
+    }
+    
+    .skills-bg {
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 100%;
+        height: 1200px;
+    }
+
+
+    .artboard { 
+        margin: 0;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem;
+        height: 100%;
+        position: relative;
+        background-color: whitesmoke;
+        margin: 0 30px 0 30px;
+    }
+    
+
+    .card:nth-child(odd) .card__cover {
+        position: relative;
+        background-size: cover;
+        height: 15rem;
+    }
+    
+    .card:nth-child(even) .card__cover {
+        position: relative;
+        background-size: cover;
+        height: 15rem;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        background-image: linear-gradient(to top right, rgba(9, 17, 83, 0.65), rgba(39, 104, 255, 0.65)), url();
+    
+    }
+
+    /* .card:hover .card__side--back {
+        display: flex;
+    } */
+/* 
+    .demo-btn {
+        position: relative;
+        left: -30%;
+        
+    } */
+
+    
+
+    .card {
+        width: 100%;
+        font-size: 50%;
+        height: auto;
+        border-radius: 3px;
+        background-color: #fff;
+        box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
+        
+    }
+    .card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+
+    /* .card__side--back {
+        transform: rotateY(0);
+    }
+    .card:hover .card__side--front {
+        transform: rotateY(0);
+    } */
+    .card__details {
+        padding: 3rem 2rem;
+    }
+    /* .card__theme {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding: 5rem 4rem 1.5rem 4rem;
+        text-align: right;
+    } */
+
+    /* .card__theme {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 54%;
+        width: 90%;
+        text-align: center;
+    } */
+
+    .card__theme-box {
+        margin-bottom: 1.5rem;
+    }
+    .card__title {
+        font-size: 4rem;
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: row;
+        position: rela;
+        right: 20%;
+        bottom: 0;
+    }
+
+    footer {
+        background-color: var(--bg-color);
+        padding: 1.25rem;
+        text-align: center;
+        margin: 0;
+        background-color:rgb(190, 56, 101);;
+        color:white;
+    }
+
+    .modal-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    html {
+        height: 100vh;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* .card:hover .card__side--back {
+        transform: rotateY(0);
+    }
+    
+    .card:hover .card__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    .card:nth-child(odd) .card__side--back {
+        background-image: linear-gradient(to right bottom, rgba(30, 11, 54, 0.7), rgba(202, 55, 130, 0.7));
+        transform: rotateY(180deg);
+    }
+     */
+}
 
 
 @media (max-width: 75em) {
